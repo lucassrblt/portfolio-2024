@@ -17,7 +17,7 @@ const HomeSection = () => {
 
 
     return (
-        <section className="flex flex-col z-50 w-screen px-[130px] gap-[86px] items-center">
+        <section className="flex flex-col z-50 w-screen px-[130px] gap-[70px] items-center">
             <div className="flex flex-col items-center mt-[200px] w-full gap-[60px]">
                 <div className="flex flex-col items-center justify-center w-screen">
                     <motion.div className="flex items-center gap-[10px] justify-center" variants={{
@@ -55,7 +55,7 @@ const HomeSection = () => {
                         <p className="font-nunito text-primary-black text-[40px] text-nowrap">a full-stack
                             developper</p></motion.div>
                 </div>
-                <motion.div className="flex w-fit h-fit" variants={{
+                <motion.div className="flex w-fit h-fit flex-col text-center gap-[0px]" variants={{
                     hidden: {opacity: 0, y: 100},
                     show: {opacity: 1, y: 0}
                 }}
@@ -68,6 +68,9 @@ const HomeSection = () => {
                     <p className="font-nunito text-primary-black text-[22px] text-nowrap font-light z-[100]">Passionate
                         about internet, i discover web developpement two years ago and started a licence at
                         HETIC.</p>
+                    <p className="font-nunito text-primary-black text-[22px] text-nowrap font-light z-[100]">
+                        Today i’m looking for an apprenticeship to gain experience and work for stimulating projects.
+                    </p>
                 </motion.div>
             </div>
 
