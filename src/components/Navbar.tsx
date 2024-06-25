@@ -1,11 +1,7 @@
 import {motion} from "framer-motion";
 import ThemeComponent from "./ThemeComponent.tsx";
-import {useContext} from "react";
-import {ThemeContext} from "../context/ThemeContext.tsx";
 
 const Navbar = () => {
-    const themeContext = useContext(ThemeContext)
-    const { theme, setTheme } = themeContext
 
     const navbarElement: string[] = ['About', 'Project', 'Skills', 'Contact'];
     const handleResumeClick = () => {
