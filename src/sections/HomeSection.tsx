@@ -4,15 +4,18 @@ import Lottie from "lottie-react"
 import Circle from '../assets/lottie/circle.json'
 import variables from "../variables.ts";
 import {motion} from "framer-motion";
-import {useContext, useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 
 const HomeSection = () => {
     const [showLottie, setShowLottie] = useState(false)
+
     useEffect(() => {
         setTimeout(() => {
             setShowLottie(!showLottie)
         }, 4000)
     }, []);
+
+
     return (
         <section className="flex flex-col z-50 w-screen px-[130px] gap-[86px] items-center">
             <div className="flex flex-col items-center mt-[200px] w-full gap-[60px]">
