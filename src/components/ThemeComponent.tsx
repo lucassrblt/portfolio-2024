@@ -1,14 +1,13 @@
-import { Moon, Sun } from 'lucide-react'
-import {useContext, useEffect} from "react";
+import {Moon, Sun} from 'lucide-react'
+import {useContext} from "react";
 import {ThemeContext} from "../context/ThemeContext.tsx";
-import {motion} from "framer-motion";
 
 
 const ThemeComponent = () => {
     const themeContext = useContext(ThemeContext)
-    const { theme, setTheme } = themeContext
+    const {theme} = themeContext
 
-    const handleDisplay = (iconTheme: string):string => {
+    const handleDisplay = (iconTheme: string): string => {
         return theme === iconTheme ? 'flex' : 'none'
     }
 

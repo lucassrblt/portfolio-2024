@@ -1,14 +1,23 @@
 import React, {createContext, useState} from "react";
 
-export const ThemeContext = createContext(undefined)
-
+type ThemeContextType = {
+    theme: string;
+    setTheme: React.Dispatch<React.SetStateAction<string>>;
+};
 
 type ThemeProviderProps = {
     children: React.ReactNode;
 };
 
-export const ThemeProvider = ({children}) => {
-    const [theme, setTheme] = useState('light')
+type ThemeState = string
+
+
+export const ThemeContext = createContext<ThemeContextType>({
+    theme: '',
+    setTheme: () => {},
+})
+export const ThemeProvider: React.FC<ThemeProviderProps> = ({children}) => {
+    const [theme, setTheme] = useState<ThemeState>('light')
 
     return (
         <ThemeContext.Provider value={{ theme, setTheme }}>
