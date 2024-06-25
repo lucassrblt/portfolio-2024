@@ -15,7 +15,8 @@ export default {
         'secondary-black':'#444444',
         'light-grey' : 'rgba(68, 68, 68, 0.4)',
         'primary-purple' : '#9F63FF',
-        'primary-yellow' : '#FEEE63'
+        'primary-yellow' : '#FEEE63',
+        'linkedin-blue' : '#0A66C2'
       }
     },
   },

@@ -7,7 +7,7 @@ type ThemeProviderProps = {
     children: React.ReactNode;
 };
 
-export const ThemeProvider: React.FC<ThemeProviderProps> = ({children}) => {
+export const ThemeProvider = ({children}) => {
     const [theme, setTheme] = useState('light')
 
     return (

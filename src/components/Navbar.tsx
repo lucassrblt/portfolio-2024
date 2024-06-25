@@ -19,13 +19,13 @@ const Navbar = () => {
             show: {opacity: 1, y: 0}
         },
         sectionTransition : {
-            ease: "easeOut", duration: 0.8
+            ease: "easeOut", duration: 0.6
         }
 
 
     }
 
-    return <motion.section className='flex items-center justify-between fixed w-screen px-[130px] py-[30px] z-50'
+    return <motion.section className='flex items-center justify-between fixed w-screen px-[130px] py-[30px] z-[1000]'
                     variants={sectionAnimation.sectionVariant}
                     transition={sectionAnimation.sectionTransition}
                     initial="hidden"
