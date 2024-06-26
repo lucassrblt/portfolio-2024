@@ -18,7 +18,7 @@ const HomeSection = () => {
 
     return (
         <section className="flex flex-col z-50 w-screen px-[130px] gap-[70px] items-center">
-            <div className="flex flex-col items-center mt-[200px] w-full gap-[60px]">
+            <div className="flex flex-col items-center mt-[100px] w-full gap-[60px]">
                 <div className="flex flex-col items-center justify-center w-screen">
                     <motion.div className="flex items-center gap-[10px] justify-center" variants={{
                         hidden: {opacity: 0, y: 100},
@@ -29,8 +29,8 @@ const HomeSection = () => {
                                 initial="hidden"
                                 animate="show"
                     >
-                        <img src={Hand} alt="Hand"/>
-                        <p className="font-nunito text-primary-black text-[68px] text-nowrap w-fit h-fit font-medium z-50">Hi,
+                        <img src={Hand} alt="Hand" className="z-50"/>
+                        <p className="font-nunito text-primary-black text-[68px] text-nowrap w-fit h-fit font-medium z-50 dark:text-secondary-white transition ease duration-[600ms]">Hi,
                             I'm Lucas,</p></motion.div>
                     <motion.div className="flex w-fit h-fit relative" variants={{
                         hidden: {opacity: 0, y: 100},
@@ -50,9 +50,9 @@ const HomeSection = () => {
                                     initial="hidden"
                                     animate="show"
                         >
-                            {showLottie && <Lottie animationData={Circle} className=" w-[460px]"/>}
+                            {showLottie && <Lottie animationData={Circle} className=" w-[460px] z-50"/>}
                         </motion.div>
-                        <p className="font-nunito text-primary-black text-[40px] text-nowrap">a full-stack
+                        <p className="font-nunito text-primary-black text-[40px] text-nowrap dark:text-secondary-white z-50 transition ease duration-[600ms]">a full-stack
                             developper</p></motion.div>
                 </div>
                 <motion.div className="flex w-fit h-fit flex-col text-center gap-[0px]" variants={{
@@ -65,10 +65,10 @@ const HomeSection = () => {
                             initial="hidden"
                             animate="show"
                 >
-                    <p className="font-nunito text-primary-black text-[22px] text-nowrap font-light z-[100]">Passionate
+                    <p className="font-nunito text-primary-black text-[22px] text-nowrap font-light z-[100] dark:text-secondary-white transition ease duration-[600ms]">Passionate
                         about internet, i discover web developpement two years ago and started a licence at
                         HETIC.</p>
-                    <p className="font-nunito text-primary-black text-[22px] text-nowrap font-light z-[100]">
+                    <p className="font-nunito text-primary-black text-[22px] text-nowrap font-light z-[100] dark:text-secondary-white transition ease duration-[600ms]">
                         Today i’m looking for an apprenticeship to gain experience and work for stimulating projects.
                     </p>
                 </motion.div>
@@ -89,9 +89,9 @@ const HomeSection = () => {
                         <Linkedin className="stroke-primary-white"/>
                     </a>
                 </div>
-                <div className="flex items-center justify-center p-[8px] rounded-full bg-primary-black cursor-pointer">
+                <div className="flex items-center justify-center p-[8px] rounded-full bg-primary-black cursor-pointer dark:bg-secondary-white transition ease duration-[600ms]">
                     <a href={variables.links.github}>
-                        <Github className="stroke-primary-white"/>
+                        <Github className="stroke-primary-white dark:stroke-secondary-black transition ease duration-[600ms]"/>
                     </a>
                 </div>
             </motion.div>
@@ -105,8 +105,8 @@ const HomeSection = () => {
                  }}
                  initial="hidden"
                  animate="show">
-                <Mouse className="stroke-secondary-black"/>
-                <p className="font-nunito font-regular text-[16px]">Keep scrolling</p>
+                <Mouse className="stroke-secondary-black dark:stroke-secondary-white z-50 transition ease duration-[600ms]"/>
+                <p className="font-nunito font-regular text-[16px] dark:text-secondary-white z-50 transition ease duration-[600ms]">Keep scrolling</p>
             </motion.div>
         </section>
     )
