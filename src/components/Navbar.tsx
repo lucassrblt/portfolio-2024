@@ -1,13 +1,9 @@
 import {motion} from "framer-motion";
 import { ArrowDownToLine } from 'lucide-react';
-import {ThemeContext} from "../context/ThemeContext.tsx";
-import {useContext} from "react";
 
 
 const Navbar = () => {
 
-    const themeContext = useContext(ThemeContext)
-    const {theme, setTheme} = themeContext
     const navbarElement: string[] = ['About', 'Project', 'Skills', 'Contact'];
     const handleResumeClick = () => {
         const url = `${import.meta.env.APP_URL}/public/assets/documents/fakeresume.pdf`
@@ -24,7 +20,7 @@ const Navbar = () => {
         }
     }
 
-    return <motion.section className='flex items-center justify-between w-screen px-[130px] py-[30px] z-[1000]'
+    return <motion.section className='flex relative items-center justify-between w-screen px-[130px] py-[30px] z-[1000]'
                     variants={sectionAnimation.sectionVariant}
                     transition={sectionAnimation.sectionTransition}
                     initial="hidden"
