@@ -22,7 +22,8 @@ export default {
         'linkedin-blue' : '#0A66C2',
         'sticky-cursor': "#BAAFFF",
         'light-green': "#DDFF96",
-        'light-orange': "#FFB978"
+        'light-orange': "#FFB978",
+        'dribble-pink': "#EA4C89",
       }
     },
   },

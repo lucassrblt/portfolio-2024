@@ -1,25 +1,28 @@
+import {useEffect, useRef} from "react";
 
-function CircleText(){
+interface CircleTextInterface {
+    text: string
+
+}
+
+function CircleText({text} : CircleTextInterface) {
+    const paragraph = useRef<HTMLParagraphElement>(null)
+
+    const transform = () => {
+        if (paragraph.current) {
+            paragraph.current.innerHTML = paragraph.current.innerText.split('').map((letter, index) => {
+              return `<span style="transform: rotate(${index * 8.3}deg)">${letter}</span>`
+            }).join('');
+        }
+    }
+
+    useEffect(() => {
+        transform()
+    });
     return (
-        <div className="m-0">
-            <div id="circle" className="relative w-full pb-[100%] overflow-hidden">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px"
-                     y="0px" width="300px" height="300px" viewBox="0 0 300 300" enableBackground="new 0 0 300 300"
-                     xmlSpace="preserve">
-    <defs>
-        <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
-    </defs>
-                    <circle cx="150" cy="150" r="75" fill="none"/>
-                    <g>
-                        <use xlinkHref="#circlePath" fill="none"/>
-                        <text fill="#000" className="font-nunito font-semibold text-[16px]">
-                            <textPath xlinkHref="#circlePath" startOffset="50%">Novembre 2023</textPath>
-                        </text>
-                        <text fill="#000" className="font-nunito font-semibold text-[16px]">
-                            <textPath xlinkHref="#circlePath" startOffset="50%" text-anchor="middle">Novembre 2023</textPath>
-                        </text>
-                    </g>
-                </svg>
+        <div className="relative w-[124px] h-[124px] rounded-full flex items-center justify-center">
+            <div className="w-full h-full absolute" id="text">
+                <p ref={paragraph} className='circle-text-p font-nunito font-medium text-[14px]'>{text}</p>
             </div>
         </div>
     )

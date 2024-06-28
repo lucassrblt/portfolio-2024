@@ -1,6 +1,7 @@
 import Tag from "./Tag";
 import React from "react";
 import {ExternalLink, Github} from "lucide-react";
+import CircleText from "../CircleText.tsx";
 
 interface CardInterface {
     title: string,
@@ -11,12 +12,13 @@ interface CardInterface {
         repo: string,
         deployment: string
     }
+    date: string
 
 }
 
-const Card: React.FC<CardInterface> = ({title, paragraphs, img, tags, links}) => {
+const Card: React.FC<CardInterface> = ({title, paragraphs, img, tags, links, date}) => {
     return (
-        <div className="flex flex-row gap-[80px] max-w-[90%] min-h-[320px] z-50 ">
+        <div className="flex relative flex-row gap-[80px] max-w-[85%] min-h-[320px] z-50 ">
             <div className="max-h-[320px] max-w-[460px] hover:scale-90 transition-all duration-300 ">
                 <img src={img}
                      className="flex rounded-[40px] object-cover w-full h-full"/>
@@ -33,8 +35,8 @@ const Card: React.FC<CardInterface> = ({title, paragraphs, img, tags, links}) =>
                         ))}
                     </div>
                 </div>
-                <div className='flex items-center justify-between'>
-                    <div className="flex gap-[16px]">
+                <div className='flex items-center justify-between gap-[10px]'>
+                    <div className="flex gap-[10px]">
                         {tags.map((tag, index) => (
                             <Tag tag={tag} key={index}/>
                         ))}
@@ -49,6 +51,9 @@ const Card: React.FC<CardInterface> = ({title, paragraphs, img, tags, links}) =>
 
                     </div>
                 </div>
+            </div>
+            <div className="absolute left-[98%] top-[-10%]">
+                <CircleText text={date}/>
             </div>
         </div>
     )

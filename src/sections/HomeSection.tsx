@@ -1,4 +1,4 @@
-import {Mouse, Linkedin, Github} from 'lucide-react';
+import {Mouse, Linkedin, Github, Dribbble} from 'lucide-react';
 import Hand from '../assets/images/hand.svg'
 import Lottie from "lottie-react"
 import Circle from '../assets/lottie/circle.json'
@@ -106,15 +106,22 @@ const Socials = () => {
                     initial="hidden"
                     animate="show">
             <div
-                className="flex items-center justify-center p-[8px] rounded-[10px] bg-linkedin-blue cursor-pointer">
-                <a href={variables.links.linkedin}>
+                className="flex items-center justify-center p-[10px] rounded-full bg-linkedin-blue cursor-pointer">
+                <a href={variables.links.linkedin}  target="_blank">
                     <Linkedin className="stroke-primary-white"/>
                 </a>
             </div>
             <div
-                className="flex items-center justify-center p-[8px] rounded-full bg-primary-black cursor-pointer dark:bg-secondary-white transition ease duration-[600ms]">
-                <a href={variables.links.github}>
+                className="flex items-center justify-center p-[10px] rounded-full bg-primary-black cursor-pointer dark:bg-secondary-white transition ease duration-[600ms]">
+                <a href={variables.links.github}  target="_blank">
                     <Github
+                        className="stroke-primary-white dark:stroke-secondary-black transition ease duration-[600ms]"/>
+                </a>
+            </div>
+            <div
+                className="flex items-center justify-center p-[10px] rounded-full bg-dribble-pink cursor-pointer dark:bg-secondary-white transition ease duration-[600ms]">
+                <a href={variables.links.dribbble} target="_blank">
+                    <Dribbble
                         className="stroke-primary-white dark:stroke-secondary-black transition ease duration-[600ms]"/>
                 </a>
             </div>

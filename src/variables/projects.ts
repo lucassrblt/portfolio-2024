@@ -24,7 +24,8 @@ export const projects = [
         links : {
             repo : "https://github.com/lucassrblt/Runner-Clippy-s-Adventures",
             deployment : "https://runner-clippy-s-adventures.vercel.app/"
-        }
+        },
+        date : "January 2023 - 1 month"
     },
     {
         title : "HBO Max Clone",
@@ -50,7 +51,8 @@ export const projects = [
         links : {
             repo : "https://github.com/lucassrblt/Coding-Challenge",
             deployment : "https://coding-challenge-opal.vercel.app/"
-        }
+        },
+        date : "January   2024"
     },
     {
         title : "Adopte un stagiaire",
@@ -84,7 +86,8 @@ export const projects = [
         links : {
             repo : "https://github.com/HETIC-WEB2-Hackathon-2024/rouge-aus",
             deployment : ""
-        }
+        },
+        date : "June 2024 - 1 week"
     },
     {
         title : "SLTC Website",
@@ -110,6 +113,7 @@ export const projects = [
         links : {
             repo : "https://github.com/stadelavalloistennisclub/siteweb",
             deployment : "https://siteweb-eight.vercel.app/"
-        }
+        },
+        date : "April 2024 - In progress"
     }
 ]
