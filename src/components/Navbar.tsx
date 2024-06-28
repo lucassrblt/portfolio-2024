@@ -20,7 +20,7 @@ const Navbar = () => {
         }
     }
 
-    return <motion.section className='flex relative items-center justify-between w-screen px-[130px] py-[30px] z-[1000]'
+    return <motion.section className='flex absolute items-center justify-between w-screen px-[130px] py-[30px] z-[1000]'
                     variants={sectionAnimation.sectionVariant}
                     transition={sectionAnimation.sectionTransition}
                     initial="hidden"

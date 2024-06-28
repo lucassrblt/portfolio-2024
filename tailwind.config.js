@@ -14,12 +14,15 @@ export default {
         'secondary-white': '#FAFAFA',
         'primary-black':'#1E1E1E',
         'secondary-black':'#444444',
+        'third-black' : '#8D8D8D',
         'light-grey' : 'rgba(68, 68, 68, 0.4)',
         'very-light-grey': '#EAEAEA',
-        'primary-purple' : '#9F63FF',
+        'primary-purple' : '#7131FF',
         'primary-yellow' : '#FEEE63',
         'linkedin-blue' : '#0A66C2',
-        'sticky-cursor': "#BAAFFF"
+        'sticky-cursor': "#BAAFFF",
+        'light-green': "#DDFF96",
+        'light-orange': "#FFB978"
       }
     },
   },
