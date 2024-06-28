@@ -16,7 +16,7 @@ export default {
         'secondary-black':'#444444',
         'third-black' : '#8D8D8D',
         'light-grey' : 'rgba(68, 68, 68, 0.4)',
-        'very-light-grey': '#EAEAEA',
+        'very-light-grey': '#F3F3F3',
         'primary-purple' : '#7131FF',
         'primary-yellow' : '#FEEE63',
         'linkedin-blue' : '#0A66C2',

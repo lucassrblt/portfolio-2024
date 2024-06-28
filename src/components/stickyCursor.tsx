@@ -28,7 +28,7 @@ const StickyCursor = () => {
     });
 
     return (
-        <motion.div className="w-[20px] h-[20px] fixed border-2 border-sticky-cursor rounded-full" style={{ left: smoothMouse.x, top: smoothMouse.y}}>
+        <motion.div className="w-[20px] h-[20px] fixed border-2 border-sticky-cursor rounded-full z-2" style={{ left: smoothMouse.x, top: smoothMouse.y}}>
         </motion.div>
     )
 }

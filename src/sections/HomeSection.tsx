@@ -5,6 +5,13 @@ import Circle from '../assets/lottie/circle.json'
 import variables from "../variables.ts";
 import {motion} from "framer-motion";
 import {useEffect, useState} from "react";
+import shape from '../assets/images/shape-divider.svg'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
+import LeftGradient from '../assets/images/home-gradient.svg?react';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
+import RightGradient from '../assets/images/home-gradient-2.svg?react';
 
 const HomeSection = () => {
     const [showLottie, setShowLottie] = useState(false)
@@ -17,7 +24,8 @@ const HomeSection = () => {
 
 
     return (
-        <section className="flex relative flex-col z-50 w-screen px-[130px] gap-[70px] items-center h-screen justify-center">
+        <section
+            className="flex relative flex-col z-2 w-screen px-[130px] gap-[70px] items-center h-[calc(100vh+120px)] justify-center bg-very-light-grey pb-[100px]">
             <div className="flex flex-col items-center mt-[100px] w-full gap-[60px]">
                 <div className="flex flex-col items-center justify-center w-screen">
                     <motion.div className="flex items-center gap-[10px] justify-center" variants={{
@@ -53,18 +61,24 @@ const HomeSection = () => {
                         >
                             {showLottie && <Lottie animationData={Circle} className=" w-[460px] z-50"/>}
                         </motion.div>
-                        <p className="font-nunito text-primary-black text-[40px] text-nowrap dark:text-secondary-white z-50 transition ease duration-[600ms]">a full-stack
+                        <p className="font-nunito text-primary-black text-[40px] text-nowrap dark:text-secondary-white z-50 transition ease duration-[600ms]">a
+                            full-stack
                             developper</p>
                     </motion.div>
                 </div>
                 <div className="flex flex-col items-center justify-center w-screen">
-                    <Infos />
+                    <Infos/>
                 </div>
             </div>
             <div className="flex flex-col w-full gap-[60px] items-center justify-between">
-                <Socials />
-                <KeepScrolling />
+                <Socials/>
+                <KeepScrolling/>
             </div>
+            <div className="w-screen absolute bottom-0">
+                <img src={shape} className="w-full"/>
+            </div>
+            <LeftGradient className="absolute top-[10%] left-[60%]"/>
+            <RightGradient  className="absolute top-[25%] left-[-10%]"/>
         </section>
     )
 }
@@ -72,10 +86,9 @@ const HomeSection = () => {
 export default HomeSection
 
 
-
 const KeepScrolling = () => {
     return (
-        <motion.div className="flex items-center gap-[10px] absolute bottom-[5%]"
+        <motion.div className="flex items-center gap-[10px] absolute bottom-[17%]"
                     variants={{
                         hidden: {opacity: 0, y: 100},
                         show: {opacity: 1, y: 0}
