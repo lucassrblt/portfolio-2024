@@ -24,7 +24,7 @@ const HomeSection = () => {
                         hidden: {opacity: 0, y: 100},
                         show: {opacity: 1, y: 0}
                     }} transition={{
-                        ease: "easeOut", duration: 0.6, delay: 0.6
+                        ease: "easeOut", duration: 0.6, delay: 0.4
                     }}
                                 initial="hidden"
                                 animate="show"
@@ -37,7 +37,7 @@ const HomeSection = () => {
                         hidden: {opacity: 0, y: 100},
                         show: {opacity: 1, y: 0}
                     }} transition={{
-                        ease: "easeOut", duration: 0.6, delay: 1.2
+                        ease: "easeOut", duration: 0.6, delay: 0.8
                     }}
                                 initial="hidden"
                                 animate="show">
@@ -81,7 +81,7 @@ const KeepScrolling = () => {
                         show: {opacity: 1, y: 0}
                     }}
                     transition={{
-                        ease: "easeOut", duration: 1, delay: 3
+                        ease: "easeOut", duration: 0.6, delay: 2
                     }}
                     initial="hidden"
                     animate="show">
@@ -101,7 +101,7 @@ const Socials = () => {
             show: {opacity: 1, y: 0}
         }}
                     transition={{
-                        ease: "easeOut", duration: 0.6, delay: 2.4
+                        ease: "easeOut", duration: 0.6, delay: 1.6
                     }}
                     initial="hidden"
                     animate="show">
@@ -137,7 +137,7 @@ const Infos = () => {
             show: {opacity: 1, y: 0}
         }}
                     transition={{
-                        ease: "easeOut", duration: 0.6, delay: 1.8
+                        ease: "easeOut", duration: 0.6, delay: 1.2
                     }}
                     initial="hidden"
                     animate="show"

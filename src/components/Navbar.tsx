@@ -16,7 +16,7 @@ const Navbar = () => {
             show: {opacity: 1, y: 0}
         },
         sectionTransition : {
-            ease: "easeOut", duration: 0.6
+            ease: "easeOut", duration: 0.4
         }
     }
 
