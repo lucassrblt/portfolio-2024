@@ -2,7 +2,6 @@ import Tag from "./Tag";
 import React from "react";
 import {ExternalLink, Github} from "lucide-react";
 import CircleText from "../CircleText.tsx";
-import {motion} from "framer-motion";
 import Reveal from "../framer-motion/Reveal.tsx";
 
 interface CardInterface {

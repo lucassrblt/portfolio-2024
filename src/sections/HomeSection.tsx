@@ -5,7 +5,10 @@ import Circle from '../assets/lottie/circle.json'
 import variables from "../variables.ts";
 import {motion} from "framer-motion";
 import {useEffect, useState} from "react";
-import shape from '../assets/images/shape-divider.svg'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
+import Shape from '../assets/images/shape-divider.svg?react'
+import ShapeIMG from '../assets/images/shape-divider.svg'
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 import LeftGradient from '../assets/images/home-gradient.svg?react';
@@ -75,7 +78,8 @@ const HomeSection = () => {
                 <KeepScrolling/>
             </div>
             <div className="w-screen absolute bottom-0">
-                <img src={shape} className="w-full"/>
+                {/*<Shape/>*/}
+                <img src={ShapeIMG} className="w-full"/>
             </div>
             <LeftGradient className="absolute top-[10%] left-[60%]"/>
             <RightGradient  className="absolute top-[25%] left-[-10%]"/>

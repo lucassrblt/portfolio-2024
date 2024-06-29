@@ -29,6 +29,13 @@ h1, h2, h3, h4, p{
   animation: anim 10s linear infinite;
 }
 
+.shape{
+  width: 100vw;
+  path{
+    width: 100%;
+  }
+}
+
 @keyframes anim{
   0%{
     transform: rotate(0);

@@ -1,6 +1,5 @@
 import {projects} from "../variables/projects.ts";
 import Card from "../components/project/Card.tsx";
-import CircleText from "../components/CircleText.tsx";
 
 const ProjectSection = () => {
     return (
