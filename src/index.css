@@ -12,14 +12,45 @@
 html, #root{
   width: 100vw;
   height: 100vh;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 #root{
   background-image: url("assets/images/noise.svg");
-  scroll-behavior: smooth;
 }
 h1, h2, h3, h4, p{
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+}
+
+#text{
+  animation: anim 10s linear infinite;
+}
+
+.shape{
+  width: 100vw;
+  path{
+    width: 100%;
+  }
+}
+
+@keyframes anim{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.circle-text-p span{
+  position: absolute;
+  left: 50%;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  transform-origin: 0 62px;
+  color: #7131FF;
 }
