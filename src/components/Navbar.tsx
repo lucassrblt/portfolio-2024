@@ -6,7 +6,7 @@ const Navbar = () => {
 
     const navbarElement: {text: string, sectionLink: string}[] = [{ text: 'About', sectionLink: '#about_section' },{ text: 'Projects', sectionLink: '#projects_section' },{ text: 'Contact', sectionLink: '#contact_section' }];
     const handleResumeClick = () => {
-        const url = `${import.meta.env.APP_URL}/public/assets/documents/fakeresume.pdf`
+        const url = `/public/assets/documents/lucasrblt-resume.pdf`
         window.open(url, '_blank')
     }
 
